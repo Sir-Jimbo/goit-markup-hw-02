@@ -1,0 +1,111 @@
+/* цвет заголовков чёрный #212121; */
+/* цвет текста #757575;*/
+/* цвет заголовков белый, цвет текста на кнопках и основной цвет фона #FFFFFF;  */
+/* акцент и цвет ховера #2196F3; */
+/* вторичный цвет фона #F5F4FA; */
+/* цвет футера #2F303A; */
+/* прозрачный фон rgba(47, 48, 58, 0.8); */
+/* цвет текста в футере rgba(255, 255, 255, 0.6); */
+
+:root {
+  --main-text-color: #757575;
+  --primary-text-color-and-background: #ffffff;
+  --title-text-color: #212121;
+  --accent-button-and-hover-color: #2196f3;
+  --background-color-second: #f5f4fa;
+  --opacity-background-color: rgba(47, 48, 58, 0.8);
+  --footer-color: #2f303a;
+  --footer-text-color: rgba(255, 255, 255, 0.6);
+}
+body {
+  background-color: var(--primary-text-color-and-background);
+  color: var(--main-text-color);
+}
+.list {
+  list-style: none;
+}
+.text {
+  text-decoration: none;
+}
+
+/*logo*/
+.logo {
+  color: #000000;
+}
+.logo-accent {
+  color: var(--accent-button-and-hover-color);
+}
+
+/*site navigation*/
+.site-nav .link {
+  color: var(--title-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-button-and-hover-color);
+}
+.site-nav .link.current {
+  color: var(--accent-button-and-hover-color);
+}
+
+/*address*/
+.address-link {
+  color: var(--main-text-color);
+}
+.address-link:hover,
+.address-link:focus {
+  color: var(--accent-button-and-hover-color);
+}
+
+/*banner*/
+.banner-title {
+  color: var(--primary-text-color-and-background);
+}
+.button {
+  color: var(--primary-text-color-and-background);
+  background-color: var(--accent-button-and-hover-color);
+}
+
+/*section*/
+.section-title {
+  color: var(--title-text-color);
+}
+
+/*features*/
+.feature-list .title {
+  color: var(--title-text-color);
+}
+
+/*work*/
+.work-list .title {
+  color: var(--primary-text-color-and-background);
+  background-color: var(--opacity-background-color);
+}
+
+/*team*/
+.team-list .title {
+  color: var(--title-text-color);
+}
+.social-links .link:hover,
+.social-links .link:focus {
+  background-color: var(--accent-button-and-hover-color);
+}
+
+/*footer*/
+.footer {
+  color: var(--primary-text-color-and-background);
+  background-color: var(--footer-color);
+}
+.footer-logo {
+  color: var(--primary-text-color-and-background);
+}
+.footer-address-link {
+  color: var(--footer-text-color);
+}
+.footer-address-link:hover,
+.footer-address-link:focus {
+  color: var(--accent-button-and-hover-color);
+}
+.footer-text {
+  color: var(--footer-text-color);
+}
